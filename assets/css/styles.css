@@ -38,6 +38,9 @@ a.btn{
 	text-align: center;
 }
 
+/*-------------
+ 	Lines
+-------------*/
 hr{
 	width: 100%;
 	height: 2px;
@@ -46,23 +49,14 @@ hr{
 	margin-bottom: 10%;
 }
 
+/*-------------
+ 	Sections
+-------------*/
 section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 120px 100px;
-}
-
-@media (max-width: 800px){
-	section{
-		padding: 100px 50px;
-	}
-}
-
-@media (max-width: 300px){
-	section{
-		padding: 80px 30px;
-	}
 }
 
 section h3.title{
@@ -93,15 +87,13 @@ ul.grid{
 -------------*/
 header{
 	position: absolute;
-	top: 0;
-	left: 1;
 	z-index: 10;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	color: #fff;
-	padding: 35px 100px 0;
+	padding: 35px 100px;
 }
 
 header h2{
@@ -113,31 +105,15 @@ header nav{
 }
 
 header nav li{
-	margin: 0 15px;
+	margin: 25px;
 }
 
-header nav li:first-child{
-	margin-left: 10px	
+header h3{
+	font: bold 40px 'Open Sans', sans-serif;
 }
 
-header nav li:last-child{
-	margin-right: 0%;	
-}
-
-@media (max-width: 1000px){
-	header{
-		padding: 20px 50px;
-	}
-}
-
-@media (max-width: 700px){
-	header{
-		flex-direction: column;		
-	}
-
-	header h2{
-		margin-bottom: 15px;
-	}
+header a{
+	font: bold 30px 'Open Sans', sans-serif;
 }
 
 /*----------------
@@ -159,19 +135,17 @@ header nav li:last-child{
 	height: 100%;
 	background-size: cover;
 	background-color: #1076c9;
-	z-index: -1;
-	alt: "background image";
 }
 
-.hero .background-image:after{
+.background-image:after{
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #615330;
-	opacity: 0.75;
+	background-color: #5b4a21;
+	opacity: 0.7;
 	alt: "Foto van een achtbaan"
 }
 
@@ -181,8 +155,8 @@ header nav li:last-child{
 }
 
 .hero h3{
-	font: normal 2px 'Open Sans', sans-serif;
-	margin-bottom: 40px;
+	font: normal 20px 'Open Sans', sans-serif;
+	margin-bottom: 60px;
 }
 
 .hero a.btn{
@@ -207,6 +181,32 @@ header nav li:last-child{
 		padding: 15px 40px;
 	}
 
+}
+
+/*----------------
+ 	Hero2 Section checken of dit korter kan
+----------------*/
+.hero2{
+	position: relative;
+	justify-content: center;
+	color: #fff;
+	text-align: center;
+}
+
+.hero2 .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #1076c9;
+	z-index: -1;
+}
+
+.hero2 h1{
+	font: bold 50px 'Open Sans', sans-serif;
+	margin-bottom: 15px;
 }
 
 /*---------------------
@@ -246,27 +246,19 @@ footer{
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	color: #fff;
-	background-color: #414a4f;
+	color: rgb(255, 255, 255);
+	background-color: #374953;
 	padding: 60px 0;
 }
 
 footer ul{
 	display: flex;
 	margin-bottom: 25px;
-	font-size: 32px;
+	font-size: 50px;
 }
 
-footer ul li{
-	margin: 0 8px;	
-}
-
-footer ul li:first-child{
-	margin-left: 0;	
-}
-
-footer ul li:last-child{
-	margin-right: 0;	
+footer li{
+	margin: 0 10px;	
 }
 
 footer p{
@@ -274,14 +266,4 @@ footer p{
 	font-size: 14px;
 	color: rgba(255,255,255,0.6);
 	margin-bottom: 10px;
-}
-
-footer p a{
-	color: #fff;
-}
-
-@media (max-width: 700px){
-	footer{
-		padding: 80px 15px;
-	}
 }
