@@ -15,6 +15,11 @@ ul, nav{
 	list-style: none;
 }
 
+h1{
+	font: bold 50px 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+}
+
 /*-------------
  	Button
 -------------*/
@@ -118,6 +123,16 @@ header a{
 }
 
 /*----------------
+ 	Hero2 Section 
+----------------*/
+.hero2{
+	position: relative;
+	justify-content: center;
+	color: #fff;
+	text-align: center;
+}
+
+/*----------------
  	Hero Section
 ----------------*/
 .hero{
@@ -128,7 +143,7 @@ header a{
 	text-align: center;
 }
 
-.hero .background-image{
+.background-image{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -151,11 +166,6 @@ header a{
 	alt: "Foto van een achtbaan"
 }
 
-.hero h1{
-	font: bold 50px 'Open Sans', sans-serif;
-	margin-bottom: 15px;
-}
-
 .hero h3{
 	font: normal 20px 'Open Sans', sans-serif;
 	margin-bottom: 60px;
@@ -171,7 +181,7 @@ header a{
 		min-height: 400px;
 	}
 
-	.hero h1{
+	h1{
 		font-size: 60px;
 	}
 
@@ -183,32 +193,6 @@ header a{
 		padding: 15px 40px;
 	}
 
-}
-
-/*----------------
- 	Hero2 Section checken of dit korter kan
-----------------*/
-.hero2{
-	position: relative;
-	justify-content: center;
-	color: #fff;
-	text-align: center;
-}
-
-.hero2 .background-image{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-color: #1076c9;
-	z-index: -1;
-}
-
-.hero2 h1{
-	font: bold 50px 'Open Sans', sans-serif;
-	margin-bottom: 15px;
 }
 
 /*---------------------
