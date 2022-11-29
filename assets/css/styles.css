@@ -41,6 +41,7 @@ a.btn{
 	background-color: #ed900d;
 	font-weight: 800;
 	text-align: center;
+	padding: 20px 46px;
 }
 
 /*-------------
@@ -169,10 +170,6 @@ header a{
 .hero h3{
 	font: normal 20px 'Open Sans', sans-serif;
 	margin-bottom: 60px;
-}
-
-.hero a.btn{
-	padding: 20px 46px;
 }
 
 @media (max-width: 800px){
