@@ -205,7 +205,7 @@ header a{
 	justify-content: center;
 	flex-wrap: wrap;
 
-	max-width: 800px;
+	
 	width: 80%;
 }
 
@@ -219,6 +219,10 @@ header a{
 
 .contact form .btn{
 	padding: 18px 42px;
+}
+
+.contact div{
+	max-width: 800px;
 }
 
 /*-------------
