@@ -36,7 +36,7 @@ $(function() {
       this.price +
       "</td>" +
       "        <td>" +
-      '          <input class="input is-primary cart-item-qty" style="width:100px" type="number" min="1" value="' +
+      '          <input class="input is-primary cart-item-qty" style="width:100px" type="number" min="0" max="15" value="' +
       this.quantity +
       '" data-price="' +
       this.price +
