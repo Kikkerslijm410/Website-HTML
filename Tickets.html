@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
 	
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pretpark Den Haag Tickets</title>
 	<script src="https://kit.fontawesome.com/db279b264d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/tickets.css">
 </head>
 
 <body>
@@ -26,6 +28,29 @@
 	<section class="hero2">
 		<div class="background-image" style="background-image: url(assets/img/hero3.jpg);"></div>
 		<h1>De Tickets</h1>
+	</section>
+
+	<section class="contact">
+		<div class="shopping-cart-wrapper">
+			<table class="table is-fullwidth shopping-cart">
+			  <thead>
+				<tr>
+				  <th><abbr title="Position"></abbr></th>
+				  <th></th>
+				  <th>Price</th>
+				  <th>Quantity</th>
+				  <th>Total</th>
+				  <th></th>
+				</tr>
+			  </thead>
+			</table>
+			<div class="totals">
+				<div class="totals-item totals-item-total">
+					<label>Totaal bedrag</label>
+					<div class="totals-value" id="cart-total">￥0</div>
+				  </div>
+			</div>
+			<hr>
 	</section>
 
 	<section class="contact">
@@ -48,5 +73,7 @@
 		<p>Lees hier<a href="/Voorwaarden.html"> de algemene voorwaarden</a></p>
 	</footer>
 
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script src="JavaScript/Totaalbedrag.js"></script>
 </body>
 </html>
